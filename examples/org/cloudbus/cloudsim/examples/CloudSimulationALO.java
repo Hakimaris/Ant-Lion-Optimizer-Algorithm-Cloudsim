@@ -263,9 +263,9 @@ public class CloudSimulationALO {
               + (dataCenterIterator - 1) * 9 + cloudletIterator * 54; assigner++) {
             // broker.bindCloudletToVm(assigner,
             // population.getFittest(dataCenterIterator).getGene(assigner % 9));
-            broker.bindCloudletToVm(assigner, Antpopulation.getFittest(dataCenterIterator)
+            broker.bindCloudletToVm(assigner, Antlionpopulation.getFittest(dataCenterIterator)
                 .getGene(assigner - (dataCenterIterator - 1) * 9 - cloudletIterator * 54));
-            outputWriter.write(Long.toString(Antpopulation.getFittest(dataCenterIterator).getGene(assigner % 9) % 9)); // Print
+            outputWriter.write(Long.toString(Antlionpopulation.getFittest(dataCenterIterator).getGene(assigner % 9) % 9)); // Print
                                                                                                                        // Assigned
                                                                                                                        // VM
                                                                                                                        // ID
